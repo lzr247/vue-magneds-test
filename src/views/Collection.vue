@@ -63,7 +63,7 @@ export default {
         closeModal(e) {
             if(e.target === this.$refs.modal ? this.modalDisplay = 'none' : 'block');
         }
-    },
+    }
 };
 </script>
 
@@ -78,6 +78,7 @@ export default {
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            padding: 0 20px;
         }
         #blockContent {
             height: 100%;
@@ -93,6 +94,7 @@ export default {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                cursor: pointer;
             }
         }
         .overlay {
@@ -117,7 +119,6 @@ export default {
             }
         }
     }
-    
     .colorGray {
         background: rgb(199, 199, 199);
         border: 2px solid rgb(134, 132, 132);
